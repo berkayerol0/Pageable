@@ -94,6 +94,15 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <!--  Gerekirse diğer güvenilir depolar burada eklenebilir. Örneğin Spring Milestone Repository: -->
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
 </project>
