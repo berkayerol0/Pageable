@@ -26,14 +26,14 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public Page<Employee> findAllPageable(Pageable pageable) {
-        logger.info("Fetching employees with pageable: {}", pageable); 
+        logger.info("Fetching employees with pageable: {}", pageable);
         Page<Employee> page = employeeRepository.findAllPageable(pageable);
         return page;
     }
 
     @Override
     public List<DtoEmployee> toDTOList(List<Employee> employeeList) {
-        logger.info("Converting Employee list to DTO list. Size: {}", employeeList.size()); 
+        logger.info("Converting Employee list to DTO list. Size: {}", employeeList.size());
         List<DtoEmployee> dtoList = new ArrayList<>();
 
         for(Employee employee: employeeList) {
